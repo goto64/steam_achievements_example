@@ -1,0 +1,15 @@
+[package]
+name = "steam_achievements_example"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy = "0.15"
+bevy-steamworks = "0.13.0"
+bevy_egui = "0.33"
+log = "0.4.27"
+
+[profile.final-release]
+inherits = "release"
+lto = "thin"
+codegen-units = 1
